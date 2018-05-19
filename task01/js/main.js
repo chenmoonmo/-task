@@ -8,3 +8,15 @@ randomNum = [];
 for (i=1;i<10;i++) {
     randomNum.push('box'+i);
 }
+randomNum.sort (
+ function(){
+     return 0.5-math.random()
+ })
+ document.getElementById('randomNum[0]').style.backgroundcolor=randomcolor1;
+ document.getElementById('randomNum[1]').style.backgroundcolor=randomcolor2;
+ document.getElementById('randomNum[2]').style.backgroundcolor=randomcolor3;
+ for(i=3;i<randomNum.length;i++) {
+     document.getElementById('randomNum[i]').style.backgroundcolor=orange;
+ }
+}
+
