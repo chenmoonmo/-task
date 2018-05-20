@@ -1,6 +1,7 @@
+var timer
 function random(){
-    orange;
-    setInterval(getrandomcolor,1000);
+    orangecolor();
+    timer=setInterval(getrandomcolor,1000);
 }
 //生成随机色
 function getrandomcolor(){
@@ -24,10 +25,11 @@ randomNum.sort (
      document.getElementById(randomNum[i]).style.backgroundcolor="orange";
  };
 }
+//结束闪
 function orangecolor(){
-    clearInterval(threeColor);
-    var orange = getElementByClassName(box)
-    for(i=1;i<10;i++){
-        orange[i].style.backgroundcolor="orange"
+    clearInterval(timer);
+    var orange=document.getElementsByClassName("box")
+    for(i=1;i<orange.length;i++){
+        orange[i].style.backgroundcolor="orange";
     };
 }
