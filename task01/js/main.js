@@ -1,3 +1,7 @@
+function random(){
+    orange;
+    setInterval(getrandomcolor,1000);
+}
 //生成随机色
 function getrandomcolor(){
 var randomcolor1 = '#' + Math.floor(Math.random()*16777215).toString(16).slice(-6);
@@ -10,13 +14,20 @@ for (i=1;i<10;i++) {
 }
 randomNum.sort (
  function(){
-     return 0.5-math.random()
+     return 0.5-Math.random()
  })
- document.getElementById('randomNum[0]').style.backgroundcolor=randomcolor1;
- document.getElementById('randomNum[1]').style.backgroundcolor=randomcolor2;
- document.getElementById('randomNum[2]').style.backgroundcolor=randomcolor3;
+ //改变颜色
+ document.getElementById(randomNum[0]).style.backgroundcolor=randomcolor1;
+ document.getElementById(randomNum[1]).style.backgroundcolor=randomcolor2;
+ document.getElementById(randomNum[2]).style.backgroundcolor=randomcolor3;
  for(i=3;i<randomNum.length;i++) {
-     document.getElementById('randomNum[i]').style.backgroundcolor=orange;
- }
+     document.getElementById(randomNum[i]).style.backgroundcolor="orange";
+ };
 }
-
+function orangecolor(){
+    clearInterval(threeColor);
+    var orange = getElementByClassName(box)
+    for(i=1;i<10;i++){
+        orange[i].style.backgroundcolor="orange"
+    };
+}
