@@ -2,12 +2,12 @@ var timer;
 
 
 function random() {
-    orangeColor();
     timer = setInterval(getrandomcolor, 1000);
 }
 
 //生成随机色
 function getrandomcolor() {
+    orangeColor();
     var randomcolor1 = '#' + Math.floor(Math.random() * 16777215 + 0.5).toString(16).slice(-6);
     var randomcolor2 = '#' + Math.floor(Math.random() * 16777215 + 0.5).toString(16).slice(-6);
     var randomcolor3 = '#' + Math.floor(Math.random() * 16777215 + 0.5).toString(16).slice(-6);
