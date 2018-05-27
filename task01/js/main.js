@@ -1,10 +1,8 @@
 var timer;
 
-
 function random() {
-    timer = setInterval(getrandomcolor, 1000);
+    timer = setInterval(getrandomcolor, 3000);
 }
-
 //生成随机色
 function getrandomcolor() {
     orangeColor1();
