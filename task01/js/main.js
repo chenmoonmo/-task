@@ -7,7 +7,7 @@ function random() {
 
 //生成随机色
 function getrandomcolor() {
-    orangeColor();
+    orangeColor1();
     var randomcolor1 = '#' + Math.floor(Math.random() * 16777215 + 0.5).toString(16).slice(-6);
     var randomcolor2 = '#' + Math.floor(Math.random() * 16777215 + 0.5).toString(16).slice(-6);
     var randomcolor3 = '#' + Math.floor(Math.random() * 16777215 + 0.5).toString(16).slice(-6);
@@ -32,7 +32,10 @@ function getrandomcolor() {
 
 //结束闪
 function orangeColor() {
+    orangeColor1();
     clearInterval(timer);
+}
+function orangeColor1() {
     var orange = document.getElementsByClassName("box");
     for (var i = 0; i < orange.length; i++) {
         orange[i].style.backgroundColor = "orange";
