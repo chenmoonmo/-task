@@ -14,11 +14,18 @@ function getrandomcolor() {
     for (var i = 1; i < 10; i++) {
         randomNum.push("box" + i);
     }
-    randomNum.sort(
-        function () {
-            return 0.5 - Math.random()
+    function shuffle(array) {
+      
+        for (var i = array.length; i--; ) {
+          var j = Math.floor(Math.random() * (i + 1));
+          var temp = array[i];
+          array[i] = array[j];
+          array[j] = temp;
         }
-    );
+        
+        return array;
+      }
+    shuffle(randomNum);
     //改变颜色
     document.getElementById(randomNum[0]).style.backgroundColor = randomcolor1;
     document.getElementById(randomNum[1]).style.backgroundColor = randomcolor2;
