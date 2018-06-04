@@ -8,8 +8,8 @@
 </head>
 <body>
     <form method="POST" onSubmit="return rg.regCheck();">
-        <input type="hiddin" name="" id="errnum" value="0"/>
-        账户:<input type="hidden" name="" id="userid"/><br/><br/>
+        <input type="hidden" name="" id="errnum" value="0"/>
+        账户:<input type="text" name="" id="userid"/><br/><br/>
         密码:<input type="password" name="" id="userpwd"/><br/><br/>
         确认:<input type="password" name="" id="userpwd2"/><br/><br/>
         简介:<textarea name="" rows="4" cols="18" id="about"></textarea>
@@ -39,6 +39,13 @@
             eg.err();
             return false;
         }
+        var about=eg.$("about");
+        if(about.value.length>60){
+            alert("简介太长")
+            eg.err();
+            return false;
+        }
+        return ture
     }
     </script>
 </body>
