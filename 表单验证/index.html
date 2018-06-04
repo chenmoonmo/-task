@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="main.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -15,38 +16,5 @@
         简介:<textarea name="" rows="4" cols="18" id="about"></textarea>
         <input type="submit" value="注册" id="regBtn"/>
     </form>
-    <script>
-    var eg={};
-    eg.$=function(id){
-        return document.getElementById(id);
-    };
-    eg.regCheck=function(){
-        var uid=eg.$("userid");
-        var upwd=eg.$("userpwd");
-        var upwd2=eg.$("userwd2");
-        if(uid.value==""){
-            alert('账户不能为空');
-            eg.err();
-            return false;
-        }
-        if(upwd.value==""){
-            alert('密码不能为空')
-            eg.err();
-            return false;
-        }
-        if(upwd.value!=upwd2.value){
-            alert('两次输入密码不同')
-            eg.err();
-            return false;
-        }
-        var about=eg.$("about");
-        if(about.value.length>60){
-            alert("简介太长")
-            eg.err();
-            return false;
-        }
-        return ture
-    }
-    </script>
 </body>
 </html>
