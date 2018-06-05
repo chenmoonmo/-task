@@ -1,0 +1,27 @@
+* {
+margin:0;
+padding:0;
+}
+.navcnt {
+    display:flex;
+    margin:0 auto;
+    padding-top:30px;
+    background-color:blue;
+}
+.logo {
+    height:50px;
+}
+.nav {
+    display:flex;
+    margin:10px;
+}
+.nav a {
+    align-items:flex-end;
+    justify-item:flex-end;
+}
+a:link,a:visited,a:hover {
+    color:#fff;
+    text-decoration:none;
+    font-style:bold;
+    font-size:20px;
+}
