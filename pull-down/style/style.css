@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    background-color: rgba(0, 0, 0, 0.507)
+}
+.select-cnt {
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+.view-option {
+    background-color: #2c72de;
+    height: 21px;
+    float: left;
+    margin-right: 2px;
+    padding: 2px 4px;
+    
+}
+.view-option img {
+    width: 15px;
+    height: 15px;
+}
+.view-option span{
+    color: #fff;
+    font-size: 15px;
+}
+.add {
+    width: 20px;
+    height: 20px;
+    float: right;
+}
